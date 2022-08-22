@@ -10,5 +10,5 @@ To run on a new machine just copy the command in the terminal:
 # Ubuntu 22.04
 
 ```
-wget -O - https://raw.githubusercontent.com/Zalmotek/linux_post_install/main/ubuntu_22.04.sh | sudo bash
+wget -O - https://raw.githubusercontent.com/Zalmotek/linux_post_install/main/ubuntu_22.04.sh | bash
 ```
