@@ -8,24 +8,23 @@ uname -a
 
 # System Update
 sudo apt update
-sudo apt install -y ubuntu-restricted-extras gnome-tweaks gnome-shell-extension-manager
-
-# Apps
+sudo apt install -y ubuntu-restricted-extras gnome-tweaks
 sudo apt install -y zsh terminator git curl sysbench
-sudo apt install -y vlc gimp inkscape ffmpeg
 sudo apt install -y build-essential python3-pip virtualenv
 
-##Google Chrome
-cd Downloads
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
+#  Apps
+## Google Chrome
+wget --directory-prefix ~/Downloads https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i ~/Downloads/google-chrome-stable_current_amd64.deb
+rm ~/Downloads/google-chrome-stable_current_amd64.deb
 
 ##Zoom
-wget https://zoom.us/client/latest/zoom_amd64.deb
-sudo apt install ./zoom_amd64.deb
+wget --directory-prefix ~/Downloads https://zoom.us/client/latest/zoom_amd64.deb
+sudo dpkg -i ~/Downloads/zoom_amd64.deb
+rm ~/Downloads/zoom_amd64.deb
 
 ## Arduino CLI
-curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh
+#curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh
 
 # Node 18
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
@@ -34,6 +33,9 @@ sudo apt-get install -y nodejs npm
 # Create basic folders
 mkdir dev
 mkdir tools
+
+# Graphic tools
+sudo apt install -y inkscape gimp blender
 
 # Arduino
 sudo snap install arduino
