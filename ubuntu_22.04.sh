@@ -8,8 +8,14 @@ uname -a
 
 # System Update
 sudo apt update
+sudo add-apt-repository -y universe
+#app image support
+sudo apt install libfuse2
+#desktop tweaks
 sudo apt install -y ubuntu-restricted-extras gnome-tweaks
+#terminal utilities
 sudo apt install -y zsh terminator git curl sysbench
+#python stuff
 sudo apt install -y build-essential python3-pip virtualenv
 
 #  Apps
