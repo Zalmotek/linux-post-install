@@ -1,4 +1,4 @@
-# linux_post_install
+# linux-post-install
 Post install scripts for quick deploying our favorite tools.
 
 Warning: You should not run sh files without reading and understanding them. 
@@ -10,5 +10,5 @@ To run on a new machine just copy the command in the terminal:
 # Ubuntu 22.04
 
 ```
-wget -O - https://raw.githubusercontent.com/Zalmotek/linux_post_install/main/ubuntu_22.04.sh | bash
+wget -O - https://raw.githubusercontent.com/Zalmotek/linux-post-install/main/ubuntu_22.04.sh | bash
 ```
